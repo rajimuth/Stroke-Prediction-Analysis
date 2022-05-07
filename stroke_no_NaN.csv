@@ -1,4 +1,4 @@
-,Gender,Age,Hypertension,Heart_Disease,Ever_Married,Work_Type,Residence_Type,Average_Glucoce,BMI,Smoking_Status,Stroke
+,Gender,Age,Hypertension,Heart_Disease,Marriage_Status,Work_Type,Residence_Type,Average_Glucose,BMI,Smoking_Status,Stroke
 0,Male,67.0,0,1,Yes,Private,Urban,228.69,36.6,formerly smoked,1
 2,Male,80.0,0,1,Yes,Private,Rural,105.92,32.5,never smoked,1
 3,Female,49.0,0,0,Yes,Private,Urban,171.23,34.4,smokes,1
