@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Machine Learning Model on Conspiracy Theories </title>
+    <title>A Machine Learning Model on Stroke Prediction </title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en" />
@@ -16,8 +16,8 @@
 <body>  
     <div class='container-fluid'>
         <div class="jumbotron specialjum"> 
-            <h3 class='display-1'> How much of a Conspiracy Theorist are you? </h3>
-            <p class="lead">Test Your Luck With Our Prediction Model</p>
+            <h3 class='display-1'> Are you healthy? Check your risk for Stroke? </h3>
+            <p class="lead">Test  With Our Prediction Model</p>
             <p>Select your features then "CLICK to Calculate"</p>
             <br>
         </div>
@@ -107,36 +107,28 @@
                         </div>
                         <br><br>
                         
-                        <!--list for Religion-->
+                        <!--list for Smoking_Status-->
                         <div class="col-md-3">
-                            <div class="form-input" id="religion_input">
+                            <div class="form-input" id="smokingstatus_input">
                                 <br>
-                                <label for="religion">Your Religion:</label>
+                                <label for="Smoking_Status">Smoking_Status:</label>
                                 <br>
-                                <select name="religion" id="religion">
+                                <select name="Smoking_Status" id="Smoking_Status">
                                     <option selected value="1">Please Make A Selection:</option>
-                                    <option value="1">Agnostic</option>
-                                    <option value="2">Atheist</option>
-                                    <option value="3">Buddhist</option>
-                                    <option value="4">Christian (Catholic)</option>
-                                    <option value="5">Christian (Mormon)</option>
-                                    <option value="6">Christian (Protestant)</option>
-                                    <option value="7">Christian (Other)</option>
-                                    <option value="8">Hindu</option>
-                                    <option value="9">Jewish</option>
-                                    <option value="10">Muslim</option>
-                                    <option value="11">Sikh</option>
-                                    <option value="12">Other</option>
+                                    <option value="1">Never Smoked</option>
+                                    <option value="2">Formerly Smoked</option>
+                                    <option value="3">Smokes</option>
+                                    
                                 </select> 
                             </div>
                         </div>
                         <br><br>
 
-                        <!--list for Family size-->
+                        <!--list for BMI-->
                         <div class="col-md-3">
-                            <div class="form-input" id="family_size_input">
+                            <div class="form-input" id="BMI--">
                                 <br>
-                                <label for="family_size">Sibling Amount (Including Yourself):</label>
+                                <label for="BMI">BMI (Body Mass Index):</label>
                                 <br>
                                 <select name="fam_size" id="fam_size">
                                     <option value="1">Please Make A Selection:</option>
@@ -166,9 +158,9 @@
 
                         <!--list for WHERE YOU GREW UP-->
                         <div class="col-md-3">
-                            <div class="form-input" id="urban_input">
+                            <div class="form-input" id="Residence_input">
                                 <br>
-                                <label for="urban">Where you grew up:</label>
+                                <label for="Residence_input Input">Where do you Reside?:</label>
                                 <br>
                                 <select name="urban" id="urban">
                                     <option selected value="1">Please Make A Selection:</option>
@@ -182,26 +174,26 @@
 
                         <!--list for Gender-->
                         <div class="col-md-3">
-                            <div class="form-input" id="gender_input">
+                            <div class="form-input" id="HD_input">
                                 <br>
-                                <label for="gender">Your Gender:</label>
+                                <label for="Heart Disease">Your Gender:</label>
                                 <br>
-                                <select name="gender" id="gender" value="1">
-                                    <option selected value="1">Please Make A Selection:</option>
-                                    <option value="1">Male</option>
-                                    <option value="2">Female</option>
-                                    <option value="3">Other</option>
+                                <select name="Heart Disease" id="Heart Disease" value="1">
+                                    <option selected value="1">Heart Disease</option>
+                                    <option value="1">YES</option>
+                                    <option value="2">NO</option>
+                                    
                                 </select>
                             </div>  
                         </div>
                         <br><br>
 
 
-                        <!--list for Education-->
+                        <!--list for Avg Glucose-->
                         <div class="col-md-3">
-                            <div class="form-input" id="education_input">
+                            <div class="form-input" id="Avg_Glucose">
                                 <br>
-                                <label for="education">Your Education Level:</label>
+                                <label for="Avg Glucose">What is your Average Glucose?</label>
                                 <br>
                                 <select name="education" id="education">
                                     <option selected value="1">Please Make A Selection:</option>
@@ -214,87 +206,8 @@
                         </div>
                         <br><br>
 
-                        <!--list for English as a native language-->
-                        <div class="col-md-3">
-                            <div class="form-input" id="engant_input">
-                                <br>
-                                <label for="engant">English as a Native Language:</label>
-                                <br>
-                                <select name="engnat" id="engant">
-                                    <option selected value="1">Please Make A Selection:</option>
-                                    <option value="1">Yes</option>
-                                    <option value="2">No</option>
-                                </select>
-                            </div>
-                        </div>
-                        <br><br>
+                        
 
-                        <!--list for Hand Orientation-->
-                        <div class="col-md-3">
-                            <div class="form-input" id="hand_input">
-                                <br>
-                                <label for="Hand">Your Hand Orientation:</label>
-                                <br>
-                                <select name="hand_orientation" id="hand_orientation">
-                                    <option selected value="1">Please Make A Selection:</option>
-                                    <option value="1">Right</option>
-                                    <option value="2">Left</option>
-                                    <option value="3">Both</option>
-                                </select>
-                            </div>
-                        </div>
-                        <br><br>
-
-                        <!--list for Sexual Orientation-->
-                        <div class="col-md-3">
-                            <div class="form-input" id="orientation_input">
-                                <br>
-                                <label for="Orientation">Your Sexual Orientation:</label>
-                                <br>
-                                <select name="Orientation" id="orientation">
-                                    <option selected value="1">Please Make A Selection:</option>
-                                    <option value="1">Heterosexual</option>
-                                    <option value="2">Bisexual</option>
-                                    <option value="3">Homosexual</option>
-                                    <option value="4">Asexual</option>
-                                    <option value="5">Other</option>
-                                </select>
-                            </div>
-                        </div>
-                        <br><br>
-
-                        <!--list for Race-->
-                        <div class="col-md-3">
-                            <div class="form-input" id="race_input">
-                                <br>
-                                <label for="race">Your Race:</label>
-                                <br>
-                                <select name="race" id="race">
-                                    <option selected value="1">Please Make A Selection:</option>
-                                    <option value="1">Asian</option>
-                                    <option value="2">Arab</option>
-                                    <option value="3">Black</option>
-                                    <option value="4">White</option>
-                                    <option value="5">Other</option>
-                                </select>
-                            </div>
-                        </div>
-                        <br><br>
-                                
-                        <!--list for Voted-->
-                        <div class="col-md-3">
-                            <div class="form-input" id="voted_input">
-                                <br>
-                                <label for="voted">Have You Voted?</label>
-                                <br>
-                                <select name="voted" id="voted">
-                                    <option selected value="1">Please Make A Selection:</option>
-                                    <option value="1">Yes</option>
-                                    <option value="2">No</option>
-                                </select>
-                            </div>
-                        </div>
-                        <br><br>
                                 
                         <!--list for Married-->
                         <div class="col-md-3">
@@ -337,27 +250,18 @@
                 <div class='col-md-12'>
                     <br>
                     <h1>Description of Results:</h1>
-                        <li>Government Malfeasance: You might believe in the malicious intent of the government.</li>
+                        <li>Risk for Stroke - HIGH: Your Risk for stroke is high. Please followup with a health care professional </li>
                         <br>
-                        <li>Malevolent Global Conspiracies: You might believe that the world as we observe it is a hoax.</li>
+                        <li>Risk for Stroke - LOW: Yayyy!!!! Your Risk for stroke is Low. Still, followup with a healthcare professional</li>
                         <br>
-                        <li>Extraterrestrial Cover Up: You might believe that aliens have already been to earth. The truth is out there!</li>
-                        <br>
-                        <li>Control of Information: You might believe that the media is biased and untruthful.</li>
-                        <br>
-                        <li>Personal Well-being: You might believe that organizations are actively seeking to control your mind and spread diseases.</li>
-                        <br>
-                        <li>You got a combination of the above: You believe in more than one. Congrats?? </li>
-                        <br>
-                        <li>Not a Conspiracy Theorist: You are a skeptic to conspiracies. At least for now... </li>
-                        <br>
+                        
                 </div>
             </div>
             <br><br>
 
 
-        <h3 id="learn">Would you like to learn more about the (GCB) Generic Conspiracisy Beliefs Scale?</h3>
-        <h2><a href="https://www.frontiersin.org/articles/10.3389/fpsyg.2013.00279/full" target="_blank">*Visit the Original Research Article to Learn More*</a></h2>
+        <h3 id="learn">Would you like to learn more about Stroke?</h3>
+        <h2><a href="https://www.nature.com/articles/s41598-021-89434-7" target="_blank">*Click here to Visit the Original Research Article to Learn More about Stroke prediction*</a></h2>
 
 
         <!-- Link to JS file, d3, and plotly-->
