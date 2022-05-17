@@ -14,20 +14,7 @@ def predict():
     output = "Your value here!"
     #If you have the user submit a form
     if request.method == 'POST': 
-        """
-        age: age,
-            religion: religion,
-            family_size: family_size,
-            urban: urban,
-            gender: gender,
-            education: education,
-            engant: engant,
-            hand_orientation: hand_orientation,
-            orientation: orientation, 
-            race: race,
-            voted: voted,
-            married: married
-"""
+
         model= joblib.load('random_forest_4.joblib')
         
         age=request.json.get("age")
@@ -56,3 +43,5 @@ def predict():
 
 if __name__=="__main__":
     app.run(debug=True)
+    
+
