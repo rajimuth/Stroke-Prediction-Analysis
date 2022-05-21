@@ -15,23 +15,22 @@ def predict():
     #If you have the user submit a form
     if request.method == 'POST': 
 
-        model= joblib.load('random_forest_4.joblib')
+        model= joblib.load('models/test1.joblib')
         
         age=request.json.get("age")
-        religion=request.json.get("religion")
-        family_size=request.json.get("family_size")
-        urban=request.json.get("urban")
-        gender=request.json.get("gender")
-        education=request.json.get("education")
-        engant=request.json.get("engant")
-        hand_orientation=request.json.get("hand_orientation")
-        orientation=request.json.get("orientation")
-        race=request.json.get("race")
-        voted=request.json.get("voted")
-        married=request.json.get("married")
-        columns = ['education', 'urban', 'gender', 'engnat', 'age', 'hand', 'religion', 'orientation', 'race', 'voted', 'married', 'familysize']
-        # test_data = [[education, urban, gender, engant, age, hand_orientation, religion, orientation, race, voted, married, family_size]]
-        test_data = pd.DataFrame([[education, urban, gender, engant, age, hand_orientation, religion, orientation, race, voted, married, family_size]], columns=columns)
+        Smoking_Status=request.json.get("Smoking_Status")
+        BMI=request.json.get("BMI")
+        Heart_Disease=request.json.get("Heart_Disease")
+        Hyper_Tension=request.json.get("Hyper_Tension")
+        Work_Type=request.json.get("Work_Type")
+        Residence=request.json.get("Residence")
+        Gender=request.json.get("Gender")
+        Avg_Glucose=request.json.get("Avg Glucose")
+        Married=request.json.get("Married")
+        
+        columns = ['age', 'Smoking_Status', 'BMI', 'Heart_Disease', 'Hyper_Tension', 'Work_Type', 'Residence', 'Gender', 'Avg_Glucose', 'Married']
+        
+        test_data = pd.DataFrame([['age', 'Smoking_Status', 'BMI', 'Heart_Disease', 'Hyper_Tension', 'Work_Type', 'Residence', 'Gender', 'Avg_Glucose', 'Married']], columns=columns)
         pred=model.predict(test_data)
 
         print(test_data)
