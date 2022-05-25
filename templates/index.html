@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Machine Learning Model for Stroke Prediction </title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en" />
+  <link rel="stylesheet" href="../static/css/style.css">
+ </head>
+ <body>  
+  <div class='container-fluid'>
+      <div class="jumbotron specialjum">
+          <h1 class="display-1" >Are you susceptible to stroke?</h1>
+          <p class="lead">Determining an outcome through the use of machine learning</p>
+          <br></br>
+          <a href='/predict' class='button'>PREDICT YOURSELF</a>
+          
+      </div>
+      <div class="row">
+          <!--Background Info Block-->
+          <div id="description" class="col-md-6">
+              <br></br>
+              <a> Background:</a><br><br>
+              <ul>
+                 <p>
+                  <a href='https://postimg.cc/nsq6D1dX' target='_blank'><img src='https://i.postimg.cc/nsq6D1dX/stroke-0.jpg' border='0' alt='stroke-0'/></a>
+                  <br></br>
+                  A stroke, sometimes called a brain attack, occurs when something blocks blood supply to part of the brain or when a blood vessel in the brain bursts.
+                  In either case, parts of the brain become damaged or die. A stroke can cause lasting brain damage, long-term disability, or even death.
+                  </p>
+                  <li>Stroke is the second leading cause of death and the third leading cause of disability in the world. </li>
+                  <br>
+                  <li>Approximately 15 million people will experience a stroke episode every year worldwide of which 33% is left with a permanent disability, whereas 40% of the cases will result in death, and by 2030 will result in the annual loss of over 200 million (death or disability) globally</li>
+                  <br>
+                  <li>TMachine learning (ML) provides a promising tool for disease evolution prediction and it is being increasingly used in biomedical studies.</li>
+                  <br>
+                  <li>The application of ML in healthcare is widely anticipated as a key step towards improving care quality, and would play a fundamental role in the development of learning healthcare systems. </li>
+                  <br>
+                  
+              </ul>
+          </div>
+
+          <!-- Google slideshow - responsive elements in CSS -->
+          <div class="col-md-6">
+              <br><br>
+              <div class="responsive-google-slides">
+                <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQwOxFbSkKOCEviMysEsiASNBP50L-1zEINlMyjfCsGqLHhMqEMMa6lmhbeQ07NxnvluaU9nP4SpRW6/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe> 
+                  
+              </div>
+          </div>
+      </div>
+      <br><br><br>
+
+      <!--Intro to graphs-->
+      <div class="wrapper">
+          <div class="col-md-5"> 
+          <br>          
+          <a>Visualizations of Dataset:</a> 
+          </br>
+        
+        </div>     
+          </div>
+          </div>
+        </div>
+          <div class="divider div-transparent"> 
+          </div>
+      </div>
+      <br><br>
+      
+      <!--begin row-->
+      <div class="row">
+              <!--Visulaizing the data features-->
+              <div class='tableauPlaceholder' id='viz1636659283096'>
+                <a href='https://postimg.cc/JywkvbHH' target='_blank'><img src='https://i.postimg.cc/JywkvbHH/Gender.png' border='0' alt='Gender'/></a>
+                <a href='https://postimg.cc/LhyZ2dZp' target='_blank'><img src='https://i.postimg.cc/LhyZ2dZp/Worktypes.png' border='0' alt='Worktypes'/></a>
+                <a href='https://postimg.cc/5XzHB6K4' target='_blank'><img src='https://i.postimg.cc/5XzHB6K4/Marriage-status.png' border='0' alt='Marriage-status'/></a>
+                <a href='https://postimg.cc/HjPjFQfW' target='_blank'><img src='https://i.postimg.cc/HjPjFQfW/Heartdis.png' border='0' alt='Heartdis'/></a>
+                <a href='https://postimg.cc/k6YX3mYY' target='_blank'><img src='https://i.postimg.cc/k6YX3mYY/HTNstatus.png' border='0' alt='HTNstatus'/></a>
+                <a href='https://postimg.cc/NLLj8KL3' target='_blank'><img src='https://i.postimg.cc/NLLj8KL3/Residencies.png' border='0' alt='Residencies'/></a>
+                <a href='https://postimg.cc/7Cxx56pQ' target='_blank'><img src='https://i.postimg.cc/7Cxx56pQ/Age.png' border='0' alt='Age'/></a>
+                
+              </div>                
+            
+
+              <br>
+
+              <!--Description of graph elements-->
+              
+                  <div class="col-md-5" >
+                     
+                              <p>
+                                  Gender Representation:There are slightly more Male than Female in our dataset
+                              </p>
+                              <p>
+                                  WorkType Representation: More than 50% of the dataset works in a Private worktype
+                              </p>
+                              <p>
+                                Marriage Status Representation: More than 63% of the dataset are married
+                            </p>
+                            <p>
+                                Heart Disease Representation: More than 95% of the dataset have heart disease
+                            </p>
+                            <p>
+                                Hyper Tension Representation: More than 90% of the dataset have hyper tension, which also corelates to increase heart disease
+                            </p>
+                            <p>
+                                Residence Representation: Equal number of people from dataset live in Urban and Rual areas
+
+                            </p>
+                            <p>
+                                Age Distribution: People from age 0 to 80 were included in the dataset
+                                
+                            </p>
+                  </div>
+              
+          </div>
+          <br><br><br>
+  
+      <!--Link to our github-->
+      <div class="row">
+          <div class="col-md-6">
+              <p style='padding-left:1px'>Brought to you by Awesome Three</p>
+              <a href='https://postimg.cc/9RMYhmqc' target='_blank'><img src='https://i.postimg.cc/9RMYhmqc/Teampic.png' border='0' alt='Teampic'/></a> 
+                      <br><br>
+              <a style='font-size:20px' href="https://github.com/rajimuth/Stroke-Prediction-Analysis" target="_blank">Click here to view our code on GitHub!</a>
+              <br><br>
+          </div>
+      </div>
+
+
+      <!-- Link to JS file, d3, and plotly-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+      <script src=“https://code.jquery.com/jquery-3.3.1.slim.min.js” integrity=“sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo” crossorigin=“anonymous”></script>
+      <script src=“https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.bundle.min.js” integrity=“sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM” crossorigin=“anonymous”></script>
+      <script src="https://d3js.org/d3.v7.min.js"></script>
+      <script src="/static/js/app.js"></script>
+      <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  </div>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
