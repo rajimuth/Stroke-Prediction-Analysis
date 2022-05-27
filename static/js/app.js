@@ -1,7 +1,6 @@
 // Add console.log to check to see if our code is working.
 console.log("app.js");
-function make_pred()
-{
+function make_pred(){
     console.log("make_pred");
     let age= document.getElementById("age").value;
     let Smoking_Status= document.getElementById("Smoking_Status").value;
@@ -25,12 +24,8 @@ function make_pred()
     console.log("Avg_Glucose",Avg_Glucose);
     console.log("Married",Married);
         
-    fetch("http://127.0.0.1:5000/predict",{
+    fetch("/predict",{
         method: "POST", 
-        headers:{
-            "Content-type":"application/json;charset=UTF-8"
-
-        },
         body: JSON.stringify({
             age: age,
             Smoking_Status: Smoking_Status,
@@ -43,22 +38,23 @@ function make_pred()
             Avg_Glucose: Avg_Glucose, 
             Married: Married       
 
-        })
+        }),
+        headers:{
+            "Content-type":"application/json;charset=UTF-8"
 
-    }).then(resp=>resp.json()
-        )
-      .then(resp=>{
-        console.log(resp);
-        document.getElementById("prediction").innerHTML=resp.Prediction;
+        }
+
+    }).then(resp=>{
+        return resp.json()
+    }).then(resp=>{
+        console.log(resp)
+        document.getElementById("prediction").innerHTML=resp.Prediction
         console.log(resp.Prediction);
         if (resp.Prediction==0){
-            document.getElementById("dummy").src= "/static/images/scully.gif" 
+            document.getElementById("dummy").src= "/static/images/High_Risk.png" 
         }
         else if (resp.Prediction==1){
-            document.getElementById("dummy").src="/static/images/washington.gif"
+            document.getElementById("dummy").src="/static/images/Low_Risk.png"
         }
-      
     })
-    
-    
-}    
+}

@@ -16,6 +16,7 @@ def predict():
     if request.method == 'POST': 
 
         model= joblib.load('models/test1.joblib')
+        scaler= joblib.load('models/scaler.joblib')
         
         age=request.json.get("age")
         Smoking_Status=request.json.get("Smoking_Status")
@@ -30,7 +31,8 @@ def predict():
         
         columns = ['age', 'Smoking_Status', 'BMI', 'Heart_Disease', 'Hyper_Tension', 'Work_Type', 'Residence', 'Gender', 'Avg_Glucose', 'Married']
         
-        test_data = pd.DataFrame([['age', 'Smoking_Status', 'BMI', 'Heart_Disease', 'Hyper_Tension', 'Work_Type', 'Residence', 'Gender', 'Avg_Glucose', 'Married']], columns=columns)
+        test_data = pd.DataFrame([[age, Smoking_Status, BMI, Heart_Disease, Hyper_Tension, Work_Type, Residence, Gender, Avg_Glucose, Married]], columns=columns)
+        # scale = scaler.fit(test_data)
         pred=model.predict(test_data)
 
         print(test_data)

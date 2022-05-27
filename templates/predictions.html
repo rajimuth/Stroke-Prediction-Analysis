@@ -29,7 +29,7 @@
                         <!--list for Age-->
                         
                         <div class="col-md-3">
-                            <div class="form-input" id="age">
+                            <div class="form-input" id="age1">
                                 <br>
                                 <label for="age">Your Age:</label>
                                 <br>
@@ -111,7 +111,7 @@
                         
                         <!--list for Smoking_Status-->
                         <div class="col-md-3">
-                            <div class="form-input" id="Smoking_Status">
+                            <div class="form-input" id="Smoking_Status1">
                                 <br>
                                 <label for="Smoking_Status">Smoking_Status:</label>
                                 <br>
@@ -120,6 +120,7 @@
                                     <option value="1">Never Smoked</option>
                                     <option value="2">Formerly Smoked</option>
                                     <option value="3">Smokes</option>
+                                    <option value="4">Unknown</option>
                                     
                                 </select> 
                             </div>
@@ -128,12 +129,12 @@
 
                         <!--list for BMI-->
                         <div class="col-md-3">
-                            <div class="form-input" id="BMI">
+                            <div class="form-input" id="BMI1">
                                 <br>
                                 <label for="BMI">BMI (Body Mass Index):</label>
                                 <br>
                                 
-                                    <input type='text' name="fam_size">
+                                    <input type='text' id="BMI">
                              
                             </div>  
                         </div>
@@ -142,7 +143,7 @@
                          
                         <!--list for Heart Disease-->
                         <div class="col-md-3">
-                            <div class="form-input" id="Heart_Disease">
+                            <div class="form-input" id="Heart_Disease1">
                                 <br>
                                 <label for="Heart_Disease">Heart Disease:</label>
                                 <br>
@@ -160,7 +161,8 @@
                          
                         <!--list for Hyper Tension-->
                         <div class="col-md-3">
-                            <div class="form-input" id="Hyper_Tension">
+                            
+                            <div class="form-input" id="Hyper_Tension1">
                                 <br>
                                 <label for="Hyper_Tension">Hyper_Tension:</label>
                                 <br>
@@ -177,7 +179,7 @@
 
                         <!--list for Work Type-->
                         <div class="col-md-3">
-                            <div class="form-input" id="Work_type">
+                            <div class="form-input" id="Work_type1">
                                 <br>
                                 <label for="Work_Type">Work_Type:</label>
                                 <br>
@@ -186,7 +188,8 @@
                                     <option value="1">Public</option>
                                     <option value="2">Private</option>
                                     <option value="3">Self-employed</option>
-                                    <option value="4">Child</option>
+                                    <option value="4">Never Worked</option>
+                                    <option value="5">Child</option>
 
                                     
                                     
@@ -196,15 +199,15 @@
                         <br><br>
                         <!--list for WHERE YOU GREW UP-->
                         <div class="col-md-3">
-                            <div class="form-input" id="Residence">
+                            <div class="form-input" id="Residence1">
                                 <br>
                                 <label for="Residence">Where do you Reside?:</label>
                                 <br>
                                 <select name="Residence" id="Residence">
                                     <option selected value="1">Please Make A Selection:</option>
                                     <option value="1">Rural</option>
-                                    <option value="2">Suburban</option>
-                                    <option value="3">Urban</option>
+                                    <option value="2">Urban</option>
+                                    
                                 </select>
                             </div>  
                         </div>
@@ -212,7 +215,7 @@
 
                         <!--list for Gender-->
                         <div class="col-md-3">
-                            <div class="form-input" id="Gender">
+                            <div class="form-input" id="Gender1">
                                 <br>
                                 <label for="Gender">Your Gender:</label>
                                 <br>
@@ -228,12 +231,12 @@
 
                         <!--list for Avg Glucose-->
                         <div class="col-md-3">
-                            <div class="form-input" id="Avg_Glucose">
+                            <div class="form-input" id="Avg_Glucose1">
                                 <br>
                                 <label for="Avg Glucose">What is your Average Glucose?</label>
                                 <br>
                                 
-                                    <input type='text' name="fam_size">
+                                    <input type='text' id="Avg_Glucose">
                              
                             </div>  
                         </div>
@@ -245,15 +248,15 @@
                                 
                         <!--list for Married-->
                         <div class="col-md-3">
-                            <div class="form-input" id="Married">
+                            <div class="form-input" id="Married1">
                                 <br>
                                 <label for="Married">Have you been Married?</label>
                                 <br>
                                 <select name="Married" id="Married">
                                     <option selected value="1">Please Make A Selection:</option>
-                                    <option value="1">Never Married</option>
-                                    <option value="2">Currently Married</option>
-                                    <option value="3">Previously Married</option>
+                                    <option value="1">Yes</option>
+                                    <option value="2">No</option>
+                                    
                                 </select>
                             </div>
                         </div>
@@ -265,18 +268,14 @@
                         <br></br>
 
                         <div class="col-md-12">
-                            <button onclick="make_pred()" class='btn btn-info'>CLICK to Calculate</button>
+                            <button onclick= make_pred() class='btn btn-info'>CLICK to Calculate</button>
                             <button onClick="window.location.reload();" class='btn btn-info'>Refresh Selections</button>
                             <button onclick="history.back()" class='btn btn-info'>Go Back to Home Page</button>
-                        </div>
-                            <div class="col-md-12">
+                            <div class="col-md-5">
                                 <h1 id="prediction"></h1>
-                                <img id="dummy" src="../static/images/stroke_0.jpg">
-                                
-                                
+                                <img id="dummy" src="../static/images/stroke_0.jpg">                                
                             </div>
-                      
-                        
+                            
                 </div>
             </div>
             <br><br>
