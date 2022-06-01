@@ -41,7 +41,7 @@ Stroke Prediction Dataset | Kaggle
 |  Feature       |Analysis   | 
 | ------------- |:-------------:| 
 |Age     |Evenly distributed between 0-100|
-| Gender     | Almost same Male vs Female  |   
+| Gender     | Slightly more Female  |   
 | WorkType | More Private than others     |  
 | Residence	 | Equal between Urban and Rural    |
 | Marriage_Status | Slightly more Married  |
