@@ -38,9 +38,17 @@ Stroke Prediction Dataset | Kaggle
 - The clean data was extracted in a separate csv file to make the rest of analysis go smooth. 
 #### Univariate Analysis of Features:
 
+|  Feature       |Analysis   | 
+| ------------- |:-------------:| 
+|Age     |Evenly distributed between 0-100|
+| Gender     | Almost same Male vs Female  |   
+| WorkType | More Private than others     |  
+| Residence	 | Equal between Urban and Rural    |
+| Marriage_Status | Slightly more Married  |
+
 <img width="431" alt="image" src="https://user-images.githubusercontent.com/94877067/171478782-06f2cd40-6f7a-4db1-b258-f84711c1e0cd.png">
 
-#### Bivariate Analysis:
+#### Bivariate Analysis with respect to Stroke:
 
 <img width="383" alt="image" src="https://user-images.githubusercontent.com/94877067/171479042-5080d5f3-04b4-4358-b0c3-3cf236b4a3d4.png">
 
