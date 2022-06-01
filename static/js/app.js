@@ -48,12 +48,15 @@ function make_pred(){
         return resp.json()
     }).then(resp=>{
         console.log(resp)
-        document.getElementById("prediction").innerHTML=resp.Prediction
+        console.log("prediction= " + resp.Prediction);
+        // document.getElementById("prediction").innerHTML=resp.Prediction
         console.log(resp.Prediction);
         if (resp.Prediction==0){
+            document.getElementById("prediction").innerHTML="Low Risk"
             document.getElementById("dummy").src= "/static/images/High_Risk.png" 
         }
         else if (resp.Prediction==1){
+            document.getElementById("prediction").innerHTML="High Risk"
             document.getElementById("dummy").src="/static/images/Low_Risk.png"
         }
     })
