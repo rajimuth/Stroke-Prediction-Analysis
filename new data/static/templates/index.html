@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Machine Learning Model for Stroke Prediction </title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en" />
+  <link rel="stylesheet" href="../static/css/style.css">
+ </head>
+ <body>  
+  <div class='container-fluid'>
+      <div class="jumbotron specialjum">
+          <h1 class="display-1" >Are you susceptible to stroke?</h1>
+          <p class="lead">Determining an outcome through the use of machine learning</p>
+          <br></br>
+          <a href='/predict' class='button'>PREDICT YOURSELF</a>
+          
+      </div>
+  
+
+
+      <div class="row">
+          <!--Background Info Block-->
+          <div id="description" class="col-md-6">
+              <br></br>
+              <a> Background:</a><br><br>
+              <ul>
+                 <p>
+                  <a href='https://postimg.cc/nsq6D1dX' target='_blank'><img src='https://i.postimg.cc/nsq6D1dX/stroke-0.jpg' border='0' alt='stroke-0'/></a>
+                  <br></br>
+                  A stroke, sometimes called a brain attack, occurs when something blocks blood supply to part of the brain or when a blood vessel in the brain bursts.
+                  In either case, parts of the brain become damaged or die. A stroke can cause lasting brain damage, long-term disability, or even death.
+                  </p>
+                  <li>Stroke is the second leading cause of death and the third leading cause of disability in the world. </li>
+                  <br>
+                  <li>Approximately 15 million people will experience a stroke episode every year worldwide of which 33% is left with a permanent disability, whereas 40% of the cases will result in death, and by 2030 will result in the annual loss of over 200 million (death or disability) globally</li>
+                  <br>
+                  <li>TMachine learning (ML) provides a promising tool for disease evolution prediction and it is being increasingly used in biomedical studies.</li>
+                  <br>
+                  <li>The application of ML in healthcare is widely anticipated as a key step towards improving care quality, and would play a fundamental role in the development of learning healthcare systems. </li>
+                  <br>
+                  
+              </ul>
+          </div>
+
+          <!-- Google slideshow - responsive elements in CSS -->
+          <div class="col-md-6">
+              <br><br>
+              <div class="responsive-google-slides">
+                <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQwOxFbSkKOCEviMysEsiASNBP50L-1zEINlMyjfCsGqLHhMqEMMa6lmhbeQ07NxnvluaU9nP4SpRW6/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>" 
+                  frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+              </div>
+          </div>
+      </div>
+      <br><br><br>
+
+      <!--Intro to graphs-->
+      <div class="wrapper">
+          <div class="col-md-5"> 
+          <br>          
+          <a>Visualizations of Dataset:</a> 
+          </br>
+        
+        </div>     
+          </div>
+          </div>
+        </div>
+          <div class="divider div-transparent"> 
+          </div>
+      </div>
+      <br><br>
+      
+      <!--begin row-->
+      <div class="row">
+              <!--Visulaizing the data features-->
+              <div class='tableauPlaceholder' id='viz1636659283096'>
+                <a href='https://postimg.cc/LqQt4dSR' target='_blank'><img src='https://i.postimg.cc/LqQt4dSR/Gender.png' border='0' alt='Gender'/></a>
+                <a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/dtmzdsQy/worktype.png' border='0' alt='worktype'/></a>
+                <a href='https://postimg.cc/w1V7XnwN' target='_blank'><img src='https://i.postimg.cc/w1V7XnwN/Ever-Married.png' border='0' alt='Ever-Married'/></a>
+                <a href='https://postimg.cc/SnyKxDmx' target='_blank'><img src='https://i.postimg.cc/SnyKxDmx/Age.png' border='0' alt='Age'/></a>
+                <a href='https://postimg.cc/2VYk02b7' target='_blank'><img src='https://i.postimg.cc/2VYk02b7/Hyper-tension.png' border='0' alt='Hyper-tension'/></a>
+              </div>                
+            
+
+              <br>
+
+              <!--Description of graph elements-->
+              
+                  <div class="col-md-5" >
+                      <br>
+                      <h3>Visualization of Gender Representation:</h3> 
+                              <br>
+                              <p>
+                                  The first chart shows that there is more Male than Female in our dataset
+                              </p>
+                              <p>
+                                  In the second chart, the averages based on gender identification can be observed. 
+                                  Women and other have a higher overall rating as conspiracy theorists in comparison to men. 
+                              </p>
+                  </div>
+              
+          </div>
+          <br><br><br>
+  
+      <!--Link to our github-->
+      <div class="row">
+          <div class="col-md-6">
+              <p style='padding-left:1px'>Brought to you by Awesome Three</p>
+              <a href='https://postimg.cc/9RMYhmqc' target='_blank'><img src='https://i.postimg.cc/9RMYhmqc/Teampic.png' border='0' alt='Teampic'/></a> style="height:220px ; width:368px" />
+                      <br><br>
+              <a style='font-size:20px' href="https://github.com/rajimuth/Stroke-Prediction-Analysis" target="_blank">Click here to view our code on GitHub!</a>
+              <br><br>
+          </div>
+      </div>
+
+
+      <!-- Link to JS file, d3, and plotly-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+      <script src=“https://code.jquery.com/jquery-3.3.1.slim.min.js” integrity=“sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo” crossorigin=“anonymous”></script>
+      <script src=“https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.bundle.min.js” integrity=“sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM” crossorigin=“anonymous”></script>
+      <script src="https://d3js.org/d3.v7.min.js"></script>
+      <script src="../static/js/app.js"></script>
+      <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  </div>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
